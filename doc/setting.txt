@@ -1,0 +1,9 @@
+#centos7 방화벽 포트 추가(root)
+firewall-cmd --zone=public --permanent --add-port=8080/tcp
+firewall-cmd --zone=public --permanent --add-port=80/tcp
+
+#centos7 방화벽 포트 확인(root)
+firewall-cmd --zone=public --list-all
+
+#centos7 방화벽 재시작(root)
+firewall-cmd --reload
